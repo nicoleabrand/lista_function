@@ -5,7 +5,16 @@
     */
 
     //Entrada
-    let raio= Number(prompt(`Informe a medida do raio do círculo`))
+    let num = Number(prompt(`Informe um número inteiro`))
+    function fatorial(num) {
+        if (num == 1) {
+            return 1;
+        } else {
+            return num* fatorial(num - 1);
+        }
+    }
+    let resultado = fatorial(num);
+    alert(`O resultado da fatoração é de ${resultado}`);
 
     //Processamento
 

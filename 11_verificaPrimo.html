@@ -5,7 +5,14 @@
     */
 
     //Entrada
-
+    let num = Number(prompt(`Informe um número inteiro`))
+    function primo() {
+        if (num%2==0 || num%4==0 || num%8==0)
+        alert(`O número ${num} não é um número primo`)
+        else
+        alert(`O número ${num} é um número primo`)
+    }
+    primo()
 
     //Processamento
 

@@ -6,7 +6,17 @@
     */
 
     //Entrada
-
+    const palavra = prompt(`Informe uma palavra`).toLowerCase()
+    const letra = prompt(`Informe uma letra`).toLowerCase()
+    qtletra = 0;
+    function contagem() {
+        for (const item of palavra) {
+            if (item==letra)
+                qtletra++
+        }
+        return qtletra
+    }
+    alert(`A quantidade da letra inforrmada nesta palavra é de ${contagem()}`)
 
     //Processamento
 

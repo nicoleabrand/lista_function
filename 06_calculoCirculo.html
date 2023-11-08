@@ -8,7 +8,17 @@
     */
 
     //Entrada
-
+    let raio= Number(prompt(`Informe a medida do raio do círculo`))
+    let mensagemFi= ""
+    function area(raio) {
+        mensagemFi+= `O resultado da área é de ${(Math.PI * raio**2).toFixed(2)}`
+    }
+    function perimetro(raio) {
+        mensagemFi+= ` e o resultado do perímetro é de ${(2*Math.PI *raio).toFixed(2)}`
+    }
+    area(raio)
+    perimetro(raio)
+    alert(mensagemFi)
 
     //Processamento
 
